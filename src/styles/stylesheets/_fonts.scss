@@ -1,0 +1,26 @@
+/// Font Family: 'Kanit' -> Sans Serif
+// @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'Fonseca';
+  src: local('Fonseca'), url('./Fonseca-Regular.otf') format('otf');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'SuperStar';
+  src: local('SuperStar'), url('./superstar.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/// Font Family: 'Open Sans' -> sans serif
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/// Make all headings bold
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold !important;
+}

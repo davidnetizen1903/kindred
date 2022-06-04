@@ -1,0 +1,27 @@
+/// Import all fonts and typography styling
+@import './fonts';
+/// Import all utility classes
+@import './util';
+
+.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 4s linear forwards, filling 3s ease-in forwards;
+}
+
+.text-line text {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%, 90% { fill: black; fill-opacity: 0; }
+  100% { fill: black; fill-opacity: 1; }
+}

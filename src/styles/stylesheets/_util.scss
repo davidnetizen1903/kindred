@@ -1,0 +1,54 @@
+/// A utility that helps with preventing css effects
+.no {
+  /// @name no-padding
+  /// This class name removes all padding when applied to an element
+  &-padding {
+    padding: 0 !important;
+  }
+
+  /// @name no-select
+  /// This class name prevents all user selection (highlights) when applied to an element
+  &-select {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /// @name no-drag
+  /// This class name prevents all user drag when applied to an element
+  &-drag {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+}
+
+/// A utility that hides an element
+.hidden {
+  display: none !important;
+}
+
+/// Disables unwanted dragging
+img,
+video {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-drag: none;
+}
+
+/// Disables MacOS momentum scroll
+html,
+head,
+body {
+  overscroll-behavior-y: none;
+}
